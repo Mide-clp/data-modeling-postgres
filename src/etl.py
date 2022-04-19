@@ -120,7 +120,6 @@ def main():
         executor.map(process_songdata, song_files)
 
     # insert all logfiles
-    time.sleep(30)
 
     with ThreadPoolExecutor(max_workers=5) as executor:
         executor.map(process_logfile, log_files)
