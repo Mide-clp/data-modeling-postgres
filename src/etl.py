@@ -73,7 +73,7 @@ def process_logfile(file):
             conn.commit()
             print("inserted data into time table")
         except psycopg2.Error as e:
-            print("error inserting to song tables")
+            print("error inserting to time tables")
             print(e)
 
     # create dataframe for users table
@@ -87,7 +87,7 @@ def process_logfile(file):
             conn.commit()
             print("inserted data into user table")
         except psycopg2.Error as e:
-            print("error inserting to song tables")
+            print("error inserting to user tables")
             print(e)
 
     # insert into songplay table
@@ -107,7 +107,7 @@ def process_logfile(file):
             conn.commit()
             print("inserted data into songplay table")
         except psycopg2.Error as e:
-            print("error inserting to song tables")
+            print("error inserting to songplay tables")
             print(e)
 
 
