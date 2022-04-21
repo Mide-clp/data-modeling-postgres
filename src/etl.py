@@ -10,7 +10,7 @@ conn = psycopg2.connect(host="localhost", database="sparkifydb", user="root", pa
 cur = conn.cursor()
 
 
-#
+
 def get_files(filepath):
     all_files = []
     for root, dirs, files in os.walk(filepath):
